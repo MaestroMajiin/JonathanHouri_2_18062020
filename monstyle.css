@@ -248,7 +248,7 @@ grid-area: 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-s
+
 .box_card {
     border: 3px solid white;
     border-radius: 20px;
@@ -374,10 +374,11 @@ s
 
 
 .activites {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1Fr 1fr 1fr;
+    grid-template-areas: 
+     "activite1 activite2 activite3 activite4"
+     "activite1 activite5 activite3 activite6";
 }
 
 .activite2et3,
