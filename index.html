@@ -12,68 +12,60 @@
 </head>
 
 <body>
-<main class="Container">
+    <div class="bloc"></main>
         <header>
-            <div id="logo">
-                <img src="images/logo/Reservia.png.svg" alt="logo Reservia">
-            </div>
-
-            <nav>
-                <div class="activites_hebergements">
-                    <a class="Headernavlink" href="#hebergements_marseille">Hébergements</a>
-                    <a class="Headernavlink" href="#Activités_à_Marseille">Activités</a>
+            <nav class="navigation-bar">
+                <div class="navigation-logo">
+                    <img src="images/logo/Reservia.svg" alt="logo Reservia">
                 </div>
-                <a class="Headersignup" href="#">S'inscrire</a>
+                <a class="navigation-link" href="#hebergements_marseille">Hébergements</a>
+                <a class="navigation-link" href="#Activités_à_Marseille">Activités</a>
+                <a class="navigation-login" href="#">S'inscrire</a>
             </nav>
         </header>
-        <div class="Header2">
-            <div class="titre_principal">
-                <div class="titre_trouvez">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                </div>
-                <div class="titre_enplein">
-                    <p>En plein centre ville ou en pleine nature</p>
-                </div>
+    </div>    
+    <div class="bloc">
+      <div class="search-container">
+        <h3>Trouvez votre hébergement pour des vacances de rêve</h3>
+        <p>En plein centre ville ou en pleine nature</p>
+        <div class='search-bar'>
+            <div class="search-mapicon">
+                <i class='fas fa-map-marker-alt'></i>
             </div>
-            <div id="recherche_section">
-                <div class="barre_recherche">
-                    <div class="gps_logo">
-                        <i class="fas fa-map-marker-alt fa-lg"></i>
-                    </div>
-                    <input type="search" class="type_search" placeholder="Marseille,France" name="location_search">
-                    <button class="rechercher"><span>Rechercher</span></button>
-                    <button class="recherche_loupe"><span><i class="fas fa-search"></i></span></button>
-                </div>
-            </div>
+            <input class="search-field" type="text" placeholder="Marseille,France">
+            <button class="search-button">
+                <p class="search-button--switch">Rechercher</p>
+                <i class="fas fa-search search-icon"></i>
+            </button>
         </div>
-        <div id="section_filtres">
-            <div class="filtres_titres">
-                <p>Filtres</p>
+      </div>
+    </div>
+    <div class="bloc">
+        <div class="filters-container">
+            <h3>Filter</h3>
+            <div class="filter-element">
+                <div class="filter-element--icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <span class="filter-element--title">Economique</span>
             </div>
-            <div class="filtres">
-                <div class="bouton_filtre">
-                    <div class="circle_icon_filter">
-                        <i class="fas fa-money-bill-wave"></i>
-                    </div>
-                    <p>Economique</p>
+            <div class="filter-element">
+                <div class="filter-element--icon">
+                    <i class="fas fa-male"></i>
                 </div>
-                <div class="bouton_filtre">
-                    <div class="circle_icon_filter">
-                        <i class="fas fa-male"></i>
-                    </div>
-                    <p>Familial</p>
+                <span class="filter-element--title">Familial</span>
+            </div>
+            <div class="filter-element">
+                <div class="filter-element--icon">
+                    <i class="fas fa-heart"></i>
                 </div>
-                <div class="bouton_filtre">
-                    <div class="circle_icon_filter">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <p>Romantique</p>
-                </div>
-                <div class="bouton_filtre">
-                <div class="circle_icon_filter">
+                <span class="filter-element--title">Romantique</span>
+            </div>
+            <div class="filter-element">
+                <div class="filter-element--icon">
                     <i class="fas fa-dog"></i>
                 </div>
-                <p>Animaux autorisés</p>
+                <span class="filter-element--title">Animaux autorisés</span>
             </div>
         </div>
     </div>
